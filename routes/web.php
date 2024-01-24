@@ -28,3 +28,7 @@ Route::get('/', [DashboardController::class, 'index'])->middleware('auth');
 
 //route barang
 Route::resource('/barang', BarangController::class)->middleware('auth');
+
+
+//route Admin
+
