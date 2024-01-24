@@ -31,8 +31,18 @@ class AuthController extends Controller
         if (Auth::attempt($credentials)) {
             $request->session()->regenerate();
 
+            $userRole = auth()->user()->role;
+
             Alert::success('Success', 'Login success !');
-            return redirect()->intended('/dashboard');
+            switch ($userRole) {
+				case "admin":
+					return redirect()->intended('admin');
+
+					break;
+				default:
+					redirect()->to('/');
+			}
+           
         } else {
             Alert::error('Error', 'Login failed !');
             return redirect('/login');

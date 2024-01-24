@@ -3,6 +3,7 @@
 use App\Http\Controllers\AuthController;
 use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\BarangController;
+use App\Http\Controllers\AdminController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -16,9 +17,10 @@ use Illuminate\Support\Facades\Route;
 |
 */
 //route login
+Route::get('/', [AuthController::class, 'index'])->name('login')->middleware('guest');
+Route::get('/register', [AuthController::class, 'register']);
 Route::get('/login', [AuthController::class, 'index'])->name('login')->middleware('guest');
 Route::post('/login', [AuthController::class, 'authenticate']);
-Route::get('/register', [AuthController::class, 'register']);
 Route::post('/register', [AuthController::class, 'process']);
 Route::post('/logout', [AuthController::class, 'logout'])->middleware('auth');
 
@@ -31,4 +33,5 @@ Route::resource('/barang', BarangController::class)->middleware('auth');
 
 
 //route Admin
+Route::get('/admin', [AdminController::class, 'index'])->name('admin')->middleware('auth');
 
