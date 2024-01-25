@@ -2,17 +2,22 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Barang;
+use App\Models\User;
 use Illuminate\Http\Request;
 
 class DashboardController extends Controller
 {
     public function index(Request $request)
     {
-        $barang = Barang::count();
-
-        return view('dashboard.dashboard', [
-            'barang' => $barang,
-        ]);
+        $user = auth()->user()->role;
+        
+        if ($user == 'admin'){
+            return view('admin.dashboard');
+        }else if ($user == 'user'){
+            return view('user.dashboard');
+        }else if ($user == 'affiliate'){
+            return view('affiliate.dashboard');
+        }
+        
     }
 }

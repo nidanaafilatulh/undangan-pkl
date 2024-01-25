@@ -4,6 +4,8 @@ use App\Http\Controllers\AuthController;
 use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\BarangController;
 use App\Http\Controllers\AdminController;
+use App\Http\Controllers\UserController;
+use App\Http\Controllers\AffiliateController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -24,14 +26,23 @@ Route::post('/login', [AuthController::class, 'authenticate']);
 Route::post('/register', [AuthController::class, 'process']);
 Route::post('/logout', [AuthController::class, 'logout'])->middleware('auth');
 
-// route dashboard
-Route::get('/dashboard', [DashboardController::class, 'index'])->middleware('auth');
+// // route dashboard
+// Route::get('/dashboard', [DashboardController::class, 'index'])->middleware('auth');
 Route::get('/', [DashboardController::class, 'index'])->middleware('auth');
+
 
 //route barang
 Route::resource('/barang', BarangController::class)->middleware('auth');
 
 
-//route Admin
+//route admin
 Route::get('/admin', [AdminController::class, 'index'])->name('admin')->middleware('auth');
 
+
+//route user
+Route::get('/user', [UserController::class, 'index'])->name('user')->middleware('auth');
+
+
+
+//route affiliate
+Route::get('/affiliate', [AffiliateController::class, 'index'])->name('affiliate')->middleware('auth');

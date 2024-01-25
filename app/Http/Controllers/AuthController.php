@@ -39,8 +39,16 @@ class AuthController extends Controller
 					return redirect()->intended('admin');
 
 					break;
-				default:
-					redirect()->to('/');
+                case "user":
+                    return redirect()->intended('user');
+
+                    break;
+                case "affiliate":
+                    return redirect()->intended('affiliate');
+    
+                    break;
+                default:
+                    return redirect()->intended('/');
 			}
            
         } else {
