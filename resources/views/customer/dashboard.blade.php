@@ -1,4 +1,4 @@
-@extends('template.main')
+@extends('template.customerTemplate')
 @section('title', 'Dashboard Customer')
 @section('content')
 

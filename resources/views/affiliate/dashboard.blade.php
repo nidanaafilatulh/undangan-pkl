@@ -1,4 +1,4 @@
-@extends('template.main')
+@extends('template.affiliateTemplate')
 @section('title', 'Dashboard Affiliate')
 @section('content')
 
