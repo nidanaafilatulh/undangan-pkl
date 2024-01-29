@@ -39,8 +39,8 @@ class AuthController extends Controller
 					return redirect()->intended('admin');
 
 					break;
-                case "user":
-                    return redirect()->intended('user');
+                case "customer":
+                    return redirect()->intended('customer');
 
                     break;
                 case "affiliate":

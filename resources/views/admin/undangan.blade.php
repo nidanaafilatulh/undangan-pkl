@@ -1,5 +1,5 @@
 @extends('template.main')
-@section('title', 'Users')
+@section('title', 'Undangan')
 @section('content')
 
     <div class="content-wrapper">
@@ -24,7 +24,7 @@
                     <div class="col-12">
                         <div class="card">
                             <div class="card-header">
-                                <h3 class="card-title">Data Customer</h3>
+                                <h3 class="card-title">Undangan</h3>
                             </div>
                             <div class="card-body">
                                 <table class="table table-bordered">
@@ -32,29 +32,8 @@
                                         <tr>
                                             <th style="text-align: center;">Nomor</th>
                                             <th style="text-align: center;">Nama</th>
-                                            <th style="text-align: center;">Tanggal Registrasi</th>
-                                            <th style="text-align: center;">Email</th>
-                                            <th style="text-align: center;">Paket Aktif</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                    </tbody>
-                                </table>
-                            </div>
-                        </div>
-                        <div class="card">
-                            <div class="card-header">
-                                <h3 class="card-title">Data Affiliate</h3>
-                            </div>
-                            <div class="card-body">
-                                <table class="table table-bordered">
-                                    <thead>
-                                        <tr>
-                                            <th style="text-align: center;">Nomor</th>
-                                            <th style="text-align: center;">Nama</th>
-                                            <th style="text-align: center;">Tanggal Registrasi</th>
-                                            <th style="text-align: center;">Email</th>
-                                            <th style="text-align: center;">Paket Aktif</th>
+                                            <th style="text-align: center;">Tanggal</th>
+                                            <th style="text-align: center;">Jumlah Undangan Dibuat</th>
                                         </tr>
                                     </thead>
                                     <tbody>

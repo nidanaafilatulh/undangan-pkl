@@ -1,5 +1,5 @@
 @extends('template.main')
-@section('title', 'Dashboard Admin')
+@section('title', 'Dashboard Affiliate')
 @section('content')
 
     <div class="content-wrapper">
@@ -26,12 +26,29 @@
             <div class="container-fluid">
                 <!-- Small boxes (Stat box) -->
                 <div class="row">
-                    <div class="col-lg-3 col-6">
+                    <div class="col-lg-2">
+
+                    </div>
+                    <div class="col-lg-4 ">
                         <!-- small box -->
-                        <div class="small-box bg-info">
+                        <div class="small-box bg-info mx-auto">
                             <div class="inner">
                                 <h3>#</h3>
-                                <p>Jumlah User</p>
+                                <p>Jumlah Komisi</p>
+                            </div>
+                            <div class="icon">
+                                <i class="ion ion-bag"></i>
+                            </div>
+                            <a href="{{ Route('riwayatKomisi') }}" class="small-box-footer">More info <i
+                                    class="fas fa-arrow-circle-right"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 ms-auto">
+                        <!-- small box -->
+                        <div class="small-box bg-info  mx-auto">
+                            <div class="inner">
+                                <h3>#</h3>
+                                <p>Jumlah Customer</p>
                             </div>
                             <div class="icon">
                                 <i class="ion ion-bag"></i>

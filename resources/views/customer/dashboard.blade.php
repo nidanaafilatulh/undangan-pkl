@@ -1,5 +1,5 @@
 @extends('template.main')
-@section('title', 'Dashboard User')
+@section('title', 'Dashboard Customer')
 @section('content')
 
     <div class="content-wrapper">

@@ -10,6 +10,10 @@ class AffiliateController extends Controller
     {
         return view('affiliate.dashboard');
     }
+    public function showRiwayatKomisi()
+    {
+        return view('affiliate.riwayatKomisi');
+    }
 
     
 }
