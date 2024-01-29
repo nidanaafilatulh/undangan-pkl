@@ -15,5 +15,10 @@ class AffiliateController extends Controller
         return view('affiliate.riwayatKomisi');
     }
 
+    public function showCustomerAffiliate()
+    {
+        return view('affiliate.customer');
+    }
+
     
 }
