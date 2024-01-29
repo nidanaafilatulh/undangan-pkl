@@ -48,9 +48,8 @@ Route::get('/admin/komisi', [AdminController::class, 'showKomisi'])->name('admin
 //route customer
 Route::get('/customer', [CustomerController::class, 'index'])->name('customer')->middleware('auth');
 
-
-
 //route affiliate
 Route::get('/affiliate', [AffiliateController::class, 'index'])->name('affiliate')->middleware('auth');
 Route::get('/affiliate/riwayatKomisi', [AffiliateController::class, 'showRiwayatKomisi'])->name('affiliate.riwayatKomisi')->middleware('auth');
 Route::get('/affiliate/customer', [AffiliateController::class, 'showCustomerAffiliate'])->name('affiliate.customer')->middleware('auth');
+Route::get('/affiliate/referral', [AffiliateController::class, 'createReferral'])->name('affiliate.referral')->middleware('auth');

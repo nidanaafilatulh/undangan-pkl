@@ -20,5 +20,10 @@ class AffiliateController extends Controller
         return view('affiliate.customer');
     }
 
+    public function createReferral()
+    {
+        return view('affiliate.referral');
+    }
+
     
 }

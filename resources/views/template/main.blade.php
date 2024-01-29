@@ -113,7 +113,7 @@
                         </li>
                         @elseif(Auth::user()->role == 'affiliate')
                         <li class="nav-item">
-                            <a href="#" class="nav-link">
+                            <a href="/affiliate/referral" class="nav-link">
                                 <i class="nav-icon fa-solid fa-code"></i>
                                 <p>
                                     Generate referral
