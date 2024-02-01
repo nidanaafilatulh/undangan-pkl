@@ -13,8 +13,8 @@ class DashboardController extends Controller
         
         if ($user == 'admin'){
             return view('admin.dashboard');
-        }else if ($user == 'user'){
-            return view('user.dashboard');
+        }else if ($user == 'customer'){
+            return view('customer.dashboard');
         }else if ($user == 'affiliate'){
             return view('affiliate.dashboard');
         }

@@ -47,6 +47,13 @@ Route::get('/admin/komisi', [AdminController::class, 'showKomisi'])->name('admin
 
 //route customer
 Route::get('/customer', [CustomerController::class, 'index'])->name('customer')->middleware('auth');
+Route::get('/customer/tamu', [CustomerController::class, 'showTamu'])->name('tamu')->middleware('auth');
+Route::get('/customer/undangan', [CustomerController::class, 'showUndangan'])->name('undangan')->middleware('auth');
+Route::get('/customer/buatUndangan', [CustomerController::class, 'showBuatUndangan'])->name('buatUndangan')->middleware('auth');
+Route::get('/customer/bukuTamu', [CustomerController::class, 'showBukuTamu'])->name('bukuTamu')->middleware('auth');
+Route::get('/customer/tema', [CustomerController::class, 'showTema'])->name('tema')->middleware('auth');
+Route::get('/customer/pembayaran', [CustomerController::class, 'showPembayaran'])->name('pembayaran')->middleware('auth');
+Route::get('/customer/buktipembayaran', [CustomerController::class, 'showBuktiPembayaran'])->name('buktiPembayaran')->middleware('auth');
 
 //route affiliate
 Route::get('/affiliate', [AffiliateController::class, 'index'])->name('affiliate')->middleware('auth');
