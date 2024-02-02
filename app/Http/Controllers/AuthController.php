@@ -70,7 +70,8 @@ class AuthController extends Controller
             'name' => 'required',
             'email' => 'required|unique:users',
             'password' => 'required',
-            'passwordConfirm' => 'required|same:password'
+            'passwordConfirm' => 'required|same:password',
+            'role' => 'required',
         ]);
 
         $validated['password'] = Hash::make($request['password']);

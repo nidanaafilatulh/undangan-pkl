@@ -24,6 +24,12 @@ class CustomerController extends Controller
         return view('customer.tema');
     }
 
+    public function showTemaItem(Request $request)
+    {
+
+        return view('tema.tema1');
+    }
+
     public function showUndangan(Request $request)
     {
 

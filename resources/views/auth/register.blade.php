@@ -79,6 +79,23 @@
                             <span class="invalid-feedback text-danger">{{ $message }}</span>
                         @enderror
                     </div>
+                    <div class="input-group mb-3">
+                        <select name="role" class="form-control @error('role') is-invalid @enderror" required>
+                            <option value="" disabled selected>Pilih Role</option>
+                            <option value="admin" @if(old('role') == 'admin') selected @endif>Admin</option>
+                            <option value="customer" @if(old('role') == 'customer') selected @endif>Customer</option>
+                            <option value="affiliate" @if(old('role') == 'affiliate') selected @endif>Affiliate</option>
+                        </select>
+                        <div class="input-group-append">
+                            <div class="input-group-text">
+                                <span class="fas fa-envelope"></span>
+                            </div>
+                        </div>
+                        @error('role')
+                            <span class="invalid-feedback text-danger">{{ $message }}</span>
+                        @enderror
+                    </div>
+                    
                     <div class="row">
                         {{-- <div class="col-8">
                             <div class="icheck-primary">

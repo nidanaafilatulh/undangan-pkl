@@ -29,11 +29,7 @@
                             <div class="card-body text-center">
                                 <h4>Harga: Rp200.000</h4>
                                 <p>Deskripsi: Fitur dasar untuk startup atau bisnis kecil.</p>
-                                <ul>
-                                    <li>Fitur A</li>
-                                    <li>Fitur B</li>
-                                    <li>Fitur C</li>
-                                </ul>
+                                <img src="./assets/img/ss1.png" alt="Gambar1">
                             </div>
                             <div class="card-footer text-center">
                                 <a href="#" class="btn btn-warning">Detail</a>

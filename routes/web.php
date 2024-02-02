@@ -52,6 +52,7 @@ Route::get('/customer/undangan', [CustomerController::class, 'showUndangan'])->n
 Route::get('/customer/buatUndangan', [CustomerController::class, 'showBuatUndangan'])->name('buatUndangan')->middleware('auth');
 Route::get('/customer/bukuTamu', [CustomerController::class, 'showBukuTamu'])->name('bukuTamu')->middleware('auth');
 Route::get('/customer/tema', [CustomerController::class, 'showTema'])->name('tema')->middleware('auth');
+Route::get('/customer/tema/{id}', [CustomerController::class, 'showTemaItem'])->name('tema')->middleware('auth');
 Route::get('/customer/pembayaran', [CustomerController::class, 'showPembayaran'])->name('pembayaran')->middleware('auth');
 Route::get('/customer/buktipembayaran', [CustomerController::class, 'showBuktiPembayaran'])->name('buktiPembayaran')->middleware('auth');
 
@@ -60,3 +61,5 @@ Route::get('/affiliate', [AffiliateController::class, 'index'])->name('affiliate
 Route::get('/affiliate/riwayatKomisi', [AffiliateController::class, 'showRiwayatKomisi'])->name('affiliate.riwayatKomisi')->middleware('auth');
 Route::get('/affiliate/customer', [AffiliateController::class, 'showCustomerAffiliate'])->name('affiliate.customer')->middleware('auth');
 Route::get('/affiliate/referral', [AffiliateController::class, 'createReferral'])->name('affiliate.referral')->middleware('auth');
+
+Route::get('/tema1', [CustomerController::class, 'showTemaItem'])->name('temaItem')->middleware('auth');

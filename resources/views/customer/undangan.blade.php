@@ -36,13 +36,9 @@
                                 <img alt="Love Beach Wedding Invitation" src="https://jasaundangan.com/assets/images/product/1657766034782.JPG" class="card-img-top">
                             </div>
                             <div class="card-footer text-center">
-                                <div class="row text-center">
-                                    <div class="center">
-                                        <a href="#" class="btn btn-warning mx-1">Preview</a>
-                                        <a href="#" class="btn btn-warning mx-1">Edit Undangan</a>
-                                        <a href="{{ Route('buktiPembayaran') }}" class="btn btn-warning mx-1">Aktifkan</a>
-                                    </div>
-                                </div>
+                                <a href="#" class="btn btn-warning mx-1">Preview</a>
+                                <a href="#" class="btn btn-warning mx-1">Edit</a>
+                                <a href="{{ Route('buktiPembayaran') }}" class="btn btn-warning mx-1">Aktifkan</a>
                             </div>
                         </div>
                     </div>
@@ -55,13 +51,9 @@
                                 <img alt="Love Beach Wedding Invitation" src="https://jasaundangan.com/assets/images/product/1657766034782.JPG" class="card-img-top">
                             </div>
                             <div class="card-footer text-center">
-                                <div class="row text-center">
-                                    <div class="center">
-                                        <a href="#" class="btn btn-warning mx-1">Preview</a>
-                                        <a href="#" class="btn btn-warning mx-1">Edit Undangan</a>
-                                        <a href="{{ Route('buktiPembayaran') }}" class="btn btn-warning mx-1">Aktifkan</a>
-                                    </div>
-                                </div>
+                                <a href="#" class="btn btn-warning mx-1">Preview</a>
+                                <a href="#" class="btn btn-warning mx-1">Edit</a>
+                                <a href="{{ Route('buktiPembayaran') }}" class="btn btn-warning mx-1">Aktifkan</a>
                             </div>
                         </div>
                     </div>
@@ -74,13 +66,9 @@
                                 <img alt="Love Beach Wedding Invitation" src="https://jasaundangan.com/assets/images/product/1657766034782.JPG" class="card-img-top">
                             </div>
                             <div class="card-footer text-center">
-                                <div class="row text-center">
-                                    <div class="center">
-                                        <a href="#" class="btn btn-warning mx-1">Preview</a>
-                                        <a href="#" class="btn btn-warning mx-1">Edit Undangan</a>
-                                        <a href="{{ Route('buktiPembayaran') }}" class="btn btn-warning mx-1">Aktifkan</a>
-                                    </div>
-                                </div>
+                                <a href="#" class="btn btn-warning mx-1">Preview</a>
+                                <a href="#" class="btn btn-warning mx-1">Edit</a>
+                                <a href="{{ Route('buktiPembayaran') }}" class="btn btn-warning mx-1">Aktifkan</a>
                             </div>
                         </div>            
                     </div>
